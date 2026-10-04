@@ -1,78 +1,82 @@
-const waveformBars = [18, 34, 24, 48, 30, 58, 22, 42, 66, 28, 54, 36, 20, 46, 26, 60];
+const waveformBars = [
+  18, 34, 24, 48, 30, 58, 22, 42,
+  66, 28, 54, 36, 20, 46, 26, 60,
+];
 
 const musicDetails = [
   {
     number: "01",
-    title: "الكلمات",
-    question: "من كتبها؟",
+    title: "15 أغنية",
+    text: "أغانٍ أصلية أُعدت لتعيش داخل عالم المسلسل.",
   },
   {
     number: "02",
-    title: "اللحن",
-    question: "من لحنها؟",
+    title: "الشخصيات",
+    text: "ترتبط الأغاني بمشاعر الشخصيات وتحولاتها وصراعاتها.",
   },
   {
     number: "03",
-    title: "الحقوق",
-    question: "من يملك حقوقها؟",
+    title: "الأحداث",
+    text: "تظهر الموسيقى كجزء من الموقف الدرامي وليس كفاصل منفصل.",
   },
   {
     number: "04",
-    title: "الصوت",
-    question: "من سيغنيها؟",
+    title: "العالم",
+    text: "تمنح الموسيقى «حرب الليل» هويته الخاصة خارج الشاشة أيضًا.",
   },
 ];
 
 export default function MusicSection() {
   return (
     <section
+      id="music"
       dir="rtl"
       className="music-section relative isolate overflow-hidden bg-[#050505] px-5 py-20 text-[#f4eadc] sm:px-8 md:min-h-[570px] md:px-12 lg:px-20"
     >
-      <div className="music-note music-note-1">♪</div>
-      <div className="music-note music-note-2">♫</div>
-      <div className="music-note music-note-3">♬</div>
-      <div className="music-note music-note-4">♩</div>
-      <div className="pointer-events-none absolute bottom-4 right-[9%] -z-10 text-[8rem] font-black leading-none text-white/[0.018] sm:text-[12rem]">
-        SOUND / 06
+      {/* Musical watermark */}
+      <div className="music-note music-note-1 pointer-events-none">♪</div>
+      <div className="music-note music-note-2 pointer-events-none">♫</div>
+      <div className="music-note music-note-3 pointer-events-none">♬</div>
+      <div className="music-note music-note-4 pointer-events-none">♩</div>
+
+      <div className="pointer-events-none absolute bottom-3 right-[7%] -z-10 text-[7rem] font-medium leading-none text-white/[0.015] sm:text-[11rem]">
+        MUSIC / 07
       </div>
 
       <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_0.75fr_0.85fr] lg:items-center">
+        {/* Copy */}
         <div className="music-copy order-1 text-right">
-          <div className="mb-7 flex items-end justify-start gap-4">
-            <span className="text-5xl font-black leading-none text-[#6a0101]/80 sm:text-6xl">
-              06
+          <div className="mb-7 flex items-end gap-4">
+            <span className="text-3xl font-medium leading-none text-[#6a0101] sm:text-4xl">
+              07
             </span>
-            <span className="mb-2 h-px w-14 bg-[#6a0101]" />
-            <span className="mb-0.5 text-sm font-normal text-white/52">
-              الموسيقى داخل السيناريو
+
+            <span className="mb-2 h-px w-12 bg-[#6a0101]" />
+
+            <span className="mb-0.5 text-sm font-light text-white/45">
+              الموسيقى
             </span>
           </div>
 
-          <h2 className="max-w-2xl text-[clamp(2.05rem,3.15vw,3.55rem)] font-bold leading-[1.15] text-[#f4eadc]">
-            الأغنية ليست فاصلاً…
+          <h2 className="max-w-2xl text-[clamp(1.7rem,2.4vw,2.8rem)] font-medium leading-[1.4] text-[#f4eadc]">
+            15 أغنية أصلية…
             <br />
-            إنها جزء من الحكاية.
+            جزء من عالم «حرب الليل».
           </h2>
 
-          <p className="mt-6 max-w-xl text-base font-normal leading-8 text-white/60 sm:text-lg">
-            في «حرب الليل» تبدأ الأغنية داخل الحدث، وتتغير معه، وقد تتحول هي
-            نفسها إلى سبب للصراع.
+          <p className="mt-6 max-w-xl text-[15px] font-light leading-8 text-white/60 sm:text-base">
+            يتضمن المشروع 15 أغنية أصلية ترتبط بأحداث وشخصيات
+            المسلسل، وتتحرك مع القصة بدل أن تظهر كفقرات منفصلة عنها.
           </p>
 
-          <div className="mt-8 max-w-xl space-y-4 text-base font-light leading-8 text-white/66 sm:text-lg">
-            <p>
-              قد تبدأ الكلمات من قصة حب، ويبدأ تسجيل الأغنية في حلقة، لكن
-              الجمهور لا يسمع نسختها النهائية إلا بعد عدة حلقات.
-            </p>
-            <p>
-              الموسيقى هنا لا توقف الدراما…
-              <br />
-              بل تدفعها إلى الأمام.
-            </p>
-          </div>
+          <p className="mt-5 max-w-xl text-[15px] font-light leading-8 text-white/45 sm:text-base">
+            الموسيقى هنا لا توقف الحدث…
+            بل تصبح جزءًا من المكان، والعلاقات، والشهرة،
+            والصراع الذي يصنع عالم الليل.
+          </p>
         </div>
 
+        {/* Waveform */}
         <div className="music-wave order-3 lg:order-2">
           <div className="flex h-32 items-center justify-center gap-2">
             {waveformBars.map((height, index) => (
@@ -81,7 +85,7 @@ export default function MusicSection() {
                 className={`music-wave-bar w-px ${
                   index === 4 || index === 9 || index === 13
                     ? "bg-[#6a0101]"
-                    : "bg-white/28"
+                    : "bg-white/25"
                 }`}
                 style={{
                   height,
@@ -91,30 +95,37 @@ export default function MusicSection() {
             ))}
           </div>
 
-          <div className="mt-8 grid gap-5 sm:grid-cols-2">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {musicDetails.map((item, index) => (
               <div
                 key={item.number}
-                className="music-detail text-right"
+                className="music-detail border-t border-white/10 pt-4 text-right"
                 style={{ animationDelay: `${index * 90}ms` }}
               >
-                <p className="text-xs font-bold leading-none text-[#6a0101]/80">
+                <p className="text-[11px] font-medium text-[#6a0101]">
                   {item.number}
                 </p>
-                <div className="my-3 h-px w-9 bg-[#6a0101]/70" />
-                <h3 className="text-xl font-bold text-[#f4eadc]">
+
+                <h3 className="mt-2 text-lg font-medium text-[#f4eadc]">
                   {item.title}
                 </h3>
-                <p className="mt-1 text-sm font-light text-white/50">
-                  {item.question}
+
+                <p className="mt-2 text-sm font-light leading-6 text-white/45">
+                  {item.text}
                 </p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="music-media order-2 h-[360px] overflow-hidden lg:order-3 lg:h-[470px]">
-          <div className="music-image h-full w-full bg-cover bg-center" />
+        {/* Image */}
+        <div className="music-media order-2 h-[330px] overflow-hidden lg:order-3 lg:h-[460px]">
+          <div
+            className="music-image h-full w-full bg-cover bg-center"
+            style={{
+              backgroundImage: 'url("/images/music/music-main.jpg")',
+            }}
+          />
         </div>
       </div>
     </section>

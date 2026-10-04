@@ -18,30 +18,33 @@ export default function Hero() {
       >
         <div className="flex w-full max-w-[520px] flex-col items-end text-right [direction:rtl]">
           <p className="hero-reveal hero-delay-1 mb-3.5 w-full text-right text-sm font-normal leading-none text-[#e0d1bb]/82 [direction:rtl] sm:text-[15px] lg:text-[17px]">
-            عمل درامي موسيقي عراقي
+            مؤسسة الدر للثقافة والإعلام
           </p>
 
           <h1 className="hero-reveal hero-delay-2 w-full whitespace-nowrap text-right text-[clamp(3rem,4.8vw,5.2rem)] font-extrabold leading-[0.9] tracking-normal text-[#f4eadc] drop-shadow-[0_18px_50px_rgba(0,0,0,0.48)] [direction:rtl] max-md:text-[clamp(2.65rem,13vw,3.25rem)]">
+            <span className="mb-2 block text-[0.28em] font-light text-white/64">
+              مسلسل
+            </span>
             حرب الليل
           </h1>
 
           <span className="hero-reveal hero-delay-3 mt-4 h-px w-20 self-end bg-[#b89a62]" />
 
           <p className="hero-reveal hero-delay-3 mt-4 w-full text-right text-[clamp(1.4rem,2vw,2rem)] font-semibold leading-[1.35] text-[#fff3e1] [direction:rtl] [text-wrap:balance] lg:whitespace-nowrap">
-            حين ينتهي التصفيق… تبدأ الحكاية.
+            دراما اجتماعية | تشويق | غموض | موسيقى
           </p>
 
           <p className="hero-reveal hero-delay-4 mt-3 w-full text-right text-base font-light leading-7 text-[#eadfce]/86 [direction:rtl] sm:text-lg">
-            خلف كل نجم عالم لا يراه الجمهور.
+            15 حلقة — 15 أغنية أصلية
           </p>
 
           <p className="hero-reveal hero-delay-5 mt-9 w-full text-right text-[13px] font-normal leading-6 text-[#e6d5bd]/76 [direction:rtl] sm:text-sm">
-            تأليف رياض النعماني — 15 حلقة — رمضان
+            مقدم إلى: قناة دجلة الفضائية
           </p>
 
           <div className="hero-reveal hero-delay-5 mt-7 flex w-full flex-wrap justify-end gap-3">
             <a
-              href="#concept"
+              href="#story"
               className="inline-flex h-11 items-center justify-center rounded-md bg-[#6a0101] px-[18px] text-sm font-normal text-[#f4eadc] transition hover:bg-[#7b0909]"
             >
               استكشف المشروع

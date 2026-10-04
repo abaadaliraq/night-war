@@ -1,11 +1,9 @@
 import ArtistsSection from "@/components/ArtistsSection";
 import ConceptSection from "@/components/ConceptSection";
 import ElementsSection from "@/components/ElementsSection";
-import DijlahValueSection from "@/components/DijlahValueSection";
 import FinalSection from "@/components/FinalSection";
 import Hero from "@/components/Hero";
 import MusicSection from "@/components/MusicSection";
-import MusicTeamSection from "@/components/MusicTeamSection";
 import ProductionSection from "@/components/ProductionSection";
 import SeasonSection from "@/components/SeasonSection";
 import Sidebar from "@/components/Sidebar";
@@ -19,24 +17,26 @@ export default function Home() {
       <section id="project">
         <Hero />
       </section>
-      <section id="concept">
+      <section id="story">
         <ConceptSection />
       </section>
-      <section id="story">
+      <section id="world">
+        <ElementsSection />
+      </section>
+      <section id="gaith">
+        <SuspenseSection />
+      </section>
+      <section id="characters">
+        <ArtistsSection />
+      </section>
+      <section id="network">
         <StorySection />
       </section>
-      <ElementsSection />
-      <SuspenseSection />
       <section id="music">
         <MusicSection />
       </section>
-      <section id="artists">
-        <ArtistsSection />
-      </section>
-      <MusicTeamSection />
-      <SeasonSection />
-      <section id="value">
-        <DijlahValueSection />
+      <section id="specs">
+        <SeasonSection />
       </section>
       <section id="production">
         <ProductionSection />

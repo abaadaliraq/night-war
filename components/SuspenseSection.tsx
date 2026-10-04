@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-const questions = [
-  "من سرّب الأغنية قبل موعدها؟",
-  "لمن تعود حقوق الأغنية؟",
-  "ماذا حدث لأموال إحدى الحفلات؟",
-  "من يحاول السيطرة على الفنان؟",
-  "من يريد نقله إلى شركة منافسة؟",
-  "ماذا اكتشف المونتير داخل إحدى اللقطات؟",
+const requests = [
+  "مطرب يريد أن يبقى مطلوبًا.",
+  "راقصة تريد إبعاد منافستها.",
+  "منتج يريد السيطرة على فنان.",
+  "صاحب محل يريد ضرب منافسه.",
+  "مستثمر يريد صفقة.",
+  "طبيب تجميل يريد جذب المشاهير.",
 ];
 
 export default function SuspenseSection() {
@@ -16,44 +16,47 @@ export default function SuspenseSection() {
       className="suspense-section relative overflow-hidden bg-[#050505] px-5 py-20 text-[#f4eadc] sm:px-8 md:min-h-[560px] md:px-12 lg:px-20"
     >
       <div className="pointer-events-none absolute left-[8%] top-12 text-[8rem] font-black leading-none text-white/[0.025] md:text-[13rem]">
-        CLUE / 05
+        غيث / 04
       </div>
 
       <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div className="suspense-copy relative z-20 order-1 lg:order-2 lg:-mr-16">
           <div className="mb-7 flex items-end justify-start gap-4">
             <span className="text-5xl font-black leading-none text-[#6a0101]/80 sm:text-6xl">
-              05
+              04
             </span>
             <span className="mb-2 h-px w-14 bg-[#6a0101]" />
             <span className="mb-0.5 text-sm font-normal text-white/52">
-              خط التشويق
+              غيث
             </span>
           </div>
 
           <h2 className="max-w-2xl text-[clamp(2rem,3.1vw,3.55rem)] font-bold leading-[1.14] text-[#f4eadc]">
-            كل ما يحدث أمام الجمهور…
+            غيث
             <br />
-            ليس هو القصة كاملة.
+            المشعوذ الغامض
           </h2>
 
           <p className="mt-6 max-w-xl text-base font-normal leading-8 text-white/60 sm:text-lg">
-            تفصيل صغير يظهر في ليلة عادية قد يتحول بعد عدة حلقات إلى مفتاح أزمة
-            كبيرة.
+            يلجأ إلى غيث بعض الفنانين وأصحاب المحلات والمستثمرين وأصحاب المصالح،
+            اعتقادًا منهم بقدرته على التأثير في المنافسين وجلب النجاح.
+          </p>
+          <p className="mt-4 max-w-xl text-base font-normal leading-8 text-white/60 sm:text-lg">
+            لكن قوته الحقيقية ليست فيما يعتقد الآخرون أنه سحر فقط… بل في أسرارهم.
           </p>
         </div>
 
         <div className="suspense-media relative order-2 min-h-[300px] overflow-hidden lg:order-1 lg:min-h-[430px]">
           <Image
             src="/images/suspense/suspense-main.jpg"
-            alt="خط التشويق"
+            alt="غيث"
             fill
             sizes="(min-width: 1024px) 52vw, 100vw"
             className="object-cover"
           />
           <div className="suspense-image absolute inset-0" />
           <p className="absolute bottom-7 left-7 max-w-[220px] text-left text-sm font-normal leading-7 text-[#f4eadc]/72">
-            تفصيل واحد قد يغيّر كل شيء.
+            كل سر يصل إليه يصبح خيطًا جديدًا.
           </p>
         </div>
 
@@ -68,7 +71,7 @@ export default function SuspenseSection() {
           </div>
 
           <div className="grid gap-x-12 gap-y-6 md:grid-cols-2">
-            {questions.map((question, index) => (
+            {requests.map((question, index) => (
               <div
                 key={question}
                 className="suspense-question group relative pr-8 text-right"
@@ -84,6 +87,9 @@ export default function SuspenseSection() {
               </div>
             ))}
           </div>
+          <p className="mt-10 max-w-2xl text-right text-lg font-light leading-8 text-[#f4eadc]">
+            كل شخص يعتقد أنه وحده يعرف غيث… لكن غيث يعرفهم جميعًا.
+          </p>
         </div>
       </div>
     </section>

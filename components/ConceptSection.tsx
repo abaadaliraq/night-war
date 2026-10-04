@@ -1,5 +1,3 @@
-const journeySteps = ["كلمة", "لحن", "صوت", "إنتاج", "جمهور"];
-
 export default function ConceptSection() {
   return (
     <section
@@ -9,8 +7,8 @@ export default function ConceptSection() {
       <div className="concept-image-wrap mb-10 flex items-center md:mb-0">
         <div
           className="concept-image h-[260px] w-full overflow-hidden rounded-md bg-cover bg-center md:h-full md:max-h-[440px]"
-          style={{ backgroundImage: 'url("/images/concept/concept-main.jpg")' }}
-          aria-label="صورة الفكرة الرئيسية"
+          style={{ backgroundImage: 'url("/images/story/story-main.jpg")' }}
+          aria-label="صورة فكرة العمل"
         />
       </div>
 
@@ -21,51 +19,31 @@ export default function ConceptSection() {
         <div className="w-full max-w-4xl">
           <div className="mb-8 flex flex-col items-end gap-3">
             <p className="text-xs font-bold leading-none text-[#6a0101] sm:text-sm">
-              01
+              02
             </p>
             <div className="h-0.5 w-12 bg-[#6a0101]" />
             <p className="text-sm font-normal text-white/50">
-              الفكرة الرئيسية
+              فكرة العمل / القصة
             </p>
           </div>
 
           <h2 className="max-w-4xl text-[clamp(2rem,3vw,3.4rem)] font-bold leading-[1.22] text-[#f4eadc]">
-            الجمهور يرى النجم تحت الضوء…
-            <br />
-            لكنه لا يرى العالم الذي صنع هذا الضوء.
+            ليلة واحدة قد تغيّر كل شيء.
           </h2>
 
           <div className="mt-8 max-w-3xl space-y-4 text-base font-normal leading-8 text-white/72 sm:text-lg sm:leading-9">
             <p>
-              تبدأ «حرب الليل» من رحلة صناعة الأغنية؛ من كلمة يكتبها شاعر، إلى
-              لحن وصوت وتسجيل وإنتاج، حتى تصل الأغنية إلى الجمهور.
+              تبدأ أحداث «حرب الليل» مع آدم، شاب من عائلة عراقية ثرية ومعروفة،
+              يعيش حياة مرفهة بين المطاعم والسهرات والفنانين والأصدقاء.
             </p>
             <p>
-              لكن خلف هذه الرحلة تبدأ العلاقات والمصالح والأسرار والصراع.
+              صفقة تبدو بسيطة تبدأ بمبلغ صغير ووعد بربح أضعافه، لكنها تفتح أمامه
+              بابًا لعالم متشابك من المال والفن والنفوذ والأسرار.
             </p>
-          </div>
-
-          <div className="concept-journey mt-12">
-            <div className="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
-              <div className="absolute right-0 top-[17px] hidden h-px w-full bg-white/14 md:block" />
-              {journeySteps.map((step, index) => (
-                <div
-                  key={step}
-                  className="relative z-10 flex items-center gap-3 md:flex-col md:items-center md:gap-3"
-                >
-                  <span
-                    className={`h-2 w-2 rounded-full ${
-                      index === 0 || index === journeySteps.length - 1
-                        ? "bg-[#6a0101]"
-                        : "bg-white/40"
-                    }`}
-                  />
-                  <span className="text-sm font-normal text-white/64 sm:text-base">
-                    {step}
-                  </span>
-                </div>
-              ))}
-            </div>
+            <p>
+              ومع تقدم الأحداث يكتشف آدم أن القضية لم تعد تتعلق بأمواله فقط، وأن
+              بعض الأشخاص ربما اقتربوا منه للوصول إلى والده كمال ونفوذه وعلاقاته.
+            </p>
           </div>
         </div>
       </div>
