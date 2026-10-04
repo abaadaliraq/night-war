@@ -48,7 +48,7 @@ export default function SuspenseSection() {
 
         <div className="suspense-media relative order-2 min-h-[300px] overflow-hidden lg:order-1 lg:min-h-[430px]">
           <Image
-            src="/images/suspense/suspense-main.jpg"
+            src="/images/suspense/suspensemain.jpg"
             alt="غيث"
             fill
             sizes="(min-width: 1024px) 52vw, 100vw"
