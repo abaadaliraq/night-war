@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function FinalSection() {
   return (
     <section
@@ -90,6 +92,28 @@ export default function FinalSection() {
             <span className="text-white/60">إلى:</span>{" "}
             قناة دجلة الفضائية
           </p>
+        </div>
+
+        <div className="mt-8 flex justify-center border-t border-white/10 pt-5">
+          <a
+            href="https://www.abaad-aliraq.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 whitespace-nowrap opacity-45 transition duration-300 hover:opacity-100"
+          >
+            <Image
+              src="/images/abaad-logo.png"
+              alt="شعار أبعاد العراق"
+              width={64}
+              height={64}
+              className="h-7 w-auto shrink-0 object-contain"
+            />
+
+            <span className="text-xs font-light text-white/42">
+              العرض التقديمي بواسطة{" "}
+              <span className="font-medium text-[#f4eadc]/82">أبعاد العراق</span>
+            </span>
+          </a>
         </div>
       </div>
     </section>
